@@ -1,7 +1,9 @@
 import moment from "moment";
 import "./style.scss";
+import 'alpinejs';
 
-import { getUsers } from "./common/usersAPI";
+import "./js/vanilla.js"; 
+import "./js/alpine.js";
 /*const fancyFunc = () => {
   return [1, 2];
 };

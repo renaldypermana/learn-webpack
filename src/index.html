@@ -9,5 +9,30 @@
 	<p>Hello Sass!</p>
 
 	<button id="btn">Load!</button>
+	<h1>Rendering Using Vanilla Js</h1>
+  <ul id="userList">
+    <!-- Render User -->
+  </ul>
+  <h3>List Post</h3>
+  <div id="postList">
+    <!-- Render Post -->
+  </div>
+  <h2>Rendering Using alpine</h2>
+  <div x-data="window.alpineRender()" x-init="connect()">
+  	<ul>
+  		<template x-for="item in userList">
+  			<li>
+  				<span x-text="item.name"></span> - <span x-text="item.email"></span>
+  			</li>
+  		</template>
+  		 <template x-for="item in postList">
+        <div>
+          <h3 x-text="item.title"></h3>
+          <p x-text="item.body"></p>
+          <hr>
+        </div>
+      </template>
+  	</ul>
+  </div>
 </body>
 </html>
